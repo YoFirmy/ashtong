@@ -1,0 +1,33 @@
+<h1>Sign up</h1>
+
+
+<%= form_with model: @user, url: sign_up_path do |form| %>
+  <%= render "shared/form_errors", form: form %>
+    <div>
+      <%= form.label :name %></br>
+      <%= form.text_field :name, placeholder: "This can be a nickname if you like." %>
+    </div>
+    <div>
+      <%= form.label :address %></br>
+      <%= form.text_area :address, placeholder: "Not required when you sign up, but will be needed when you make and order." %>
+    </div>
+    <div>
+      <%= form.label :phone_number %></br>
+      <%= form.text_field :phone_number, placeholder: "Not required if you want us to contact via email." %>
+    </div>
+    <div>
+      <%= form.label :email %></br>
+      <%= form.text_field :email, placeholder: "So we can contact you." %>
+    </div>
+    <div>
+      <%= form.label :password %></br>
+      <%= form.password_field :password, placeholder: "Must be 5 characters or more." %>
+    </div>
+    <div>
+      <%= form.label :password_confirmation %></br>
+      <%= form.password_field :password_confirmation, placeholder: "Must match your password." %>
+    </div>
+    <div>
+      <%= form.submit "Sign up" %>
+    </div>
+<% end %>

@@ -80,6 +80,24 @@ nav a:hover::before {
     width: 100%;
 }
 
+.notice {
+    background: #679dca;
+    padding: 10px;
+    border: 1px solid #1c4b8a;
+    border-radius: 7px;
+    color: #1c4b8a;
+    margin-top: 10px;
+}
+
+.alert {
+    background: #c07373;
+    padding: 10px;
+    border: 1px solid #772424;
+    border-radius: 7px;
+    color: #772424;
+    margin-top: 10px;
+}
+
 .container {
      width: 90%;
      margin: 0 auto;
