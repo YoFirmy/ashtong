@@ -96,6 +96,7 @@ nav a:hover::before {
     border-radius: 7px;
     color: #772424;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -108,4 +109,44 @@ nav a:hover::before {
     font-size: 100px;
     float: left;
     color:  #49351d;
+}
+.sign-up-container {
+}
+
+.sign-up-img {
+    width: 45%;
+    float: left;
+}
+
+form {
+    float: right;
+    width: 45%;
+}
+
+.form-group {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.form-label {
+}
+
+.form-field {
+    height: 20px;
+    border: none;
+    border-bottom: 3px solid #49351d;
+    background: #ffcc99;
+    font-family: 'Roboto', sans-serif;
+}
+.text-field {
+    height: 100px;
+    border-bottom: 3px solid #49351d;
+    background: #ffcc99;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+}
+
+.sign-up-container {
 }
