@@ -14,6 +14,9 @@
  *= require_self
  */
 
+html, body {
+    height: 100%;
+}
 body {
     margin: 0;
     background: #ffcc99;
@@ -102,30 +105,36 @@ nav a:hover::before {
 .container {
      width: 90%;
      margin: 0 auto;
+     min-height: 100%;
 }
 
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color:  #49351d;
+    margin: 15px 0px;
+}
 .logo {
     font-family: 'Bebas Neue', cursive;
     font-size: 100px;
     float: left;
     color:  #49351d;
 }
-.sign-up-container {
-}
 
 .sign-up-img {
     width: 45%;
     float: left;
+    filter: ; 
 }
 
 form {
     float: right;
-    width: 45%;
+    width: 50%;
 }
 
 .form-group {
     display: grid;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .form-label {
@@ -137,16 +146,15 @@ form {
     border-bottom: 3px solid #49351d;
     background: #ffcc99;
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 .text-field {
     height: 100px;
     border-bottom: 3px solid #49351d;
     background: #ffcc99;
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 .button {
-}
-
-.sign-up-container {
 }
