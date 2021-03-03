@@ -86,7 +86,7 @@ nav a::before {
 }
 
 nav a:hover {
-    color: black;
+    color: #332515;
 }
 
 nav a:hover::before {
@@ -146,10 +146,14 @@ h1 {
 
 /* forms */
 
-form {
+.sign-form {
     float: right;
     width: 50%;
     margin-bottom: 40px;
+}
+
+form {
+    display: inline;
 }
 
 .form-group {
@@ -190,6 +194,7 @@ form {
     font-size: 17px;
     transition-duration: 0.2s;
     box-shadow: 2px 5px 5px #5a5957;
+    width: initial;
 }
 
 .button:hover {

@@ -1,0 +1,21 @@
+<h1>Edit Account Info</h1>
+
+<%= image_tag "biltong_hooks", class: "sign-up-img" %>
+<%= form_with model: Current.user, url: edit_account_info_path, class: "sign-form" do |form| %>
+  <%= render "shared/form_errors", form: form %>
+  <div class="form-group">
+    <%= form.label :name%>
+    <%= form.text_field :name, placeholder: "This can be a nickname if you like.", class: "form-field" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :address %>
+    <%= form.text_area :address, placeholder: "Not required, but we will be need your address if you wish to place an order.", class: "text-field" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number, placeholder: "Leave blank if you prefer we contact you via email.", class: "form-field" %>
+  </div>
+  <div>
+    <%= form.submit "Update", class: "button" %>
+  </div>
+<% end %>

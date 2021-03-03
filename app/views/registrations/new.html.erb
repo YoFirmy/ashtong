@@ -1,30 +1,30 @@
 <h1>Sign up</h1>
 
 <%= image_tag "biltong_hooks", class: "sign-up-img" %>
-<%= form_with model: @user, url: sign_up_path do |form| %>
+<%= form_with model: @user, url: sign_up_path, class: "sign-form" do |form| %>
   <%= render "shared/form_errors", form: form %>
   <div class="form-group">
-    <%= form.label :name, class: "form-label" %>
+    <%= form.label :name %>
     <%= form.text_field :name, placeholder: "This can be a nickname if you like.", class: "form-field" %>
   </div>
   <div class="form-group">
-    <%= form.label :address, class: "form-label" %>
+    <%= form.label :address %>
     <%= form.text_area :address, placeholder: "Not required when you sign up, but we will be need your address for you to place an order.", class: "text-field" %>
   </div>
   <div class="form-group">
-    <%= form.label :phone_number, class: "form-label" %>
+    <%= form.label :phone_number %>
     <%= form.text_field :phone_number, placeholder: "Leave blank if you prefer we contact you via email.", class: "form-field" %>
   </div>
   <div class="form-group">
-    <%= form.label :email, class: "form-label" %>
+    <%= form.label :email %>
     <%= form.text_field :email, placeholder: "So you can sign in, and we can contact you if you place an order.", class: "form-field" %>
   </div>
   <div class="form-group">
-    <%= form.label :password, class: "form-label" %>
+    <%= form.label :password %>
     <%= form.password_field :password, placeholder: "Must be 5 characters or more.", class: "form-field" %>
   </div>
   <div class="form-group">
-    <%= form.label :password_confirmation, class: "form-label" %>
+    <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation, placeholder: "Password and password confirmation must match.", class: "form-field" %>
   </div>
   <div>

@@ -1,7 +1,7 @@
 <h1>sign in</h1>
 
 <%= image_tag "packaged_ashtong", class: "sign-up-img" %>
-<%= form_with url: sign_in_path do |form| %>
+<%= form_with url: sign_in_path, class: "sign-form" do |form| %>
   <div class="form-group">
     <%= form.label :email, class: "form-label" %>
     <%= form.text_field :email, placeholder: "So we can contact you.", class: "form-field" %>
