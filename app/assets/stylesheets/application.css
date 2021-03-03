@@ -178,7 +178,25 @@ form {
     opacity: 1;
 }
 .button {
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #49351d;
+    background-color:#ffcc99;
+    border: 2px solid #7e7e1b;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    transition-duration: 0.2s;
+    box-shadow: 2px 5px 5px #5a5957;
+}
 
+.button:hover {
+    background-color:#7e7e1b;
+}
+
+.button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 2px #5a5957;
 }
 
 /* sign up page */
