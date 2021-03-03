@@ -14,14 +14,25 @@
  *= require_self
  */
 
+* {
+    margin: 0;
+    padding: 0;
+}
 html, body {
     height: 100%;
 }
+
 body {
-    margin: 0;
     background: #ffcc99;
     font-family: 'Roboto', sans-serif;
 }
+
+a:link, a:visited {
+    color: #49351d;
+    text-decoration: none;
+}
+
+/* navbar */
 
 header {
     background: #7e7e1b;
@@ -32,9 +43,10 @@ header::after {
     display: table;
     clear: both;
 }
-a {
-    color: black;
-    text-decoration: none;
+
+.inner-header {
+    width: 90%;
+    margin: 0 auto;
 }
 
 nav {
@@ -42,14 +54,12 @@ nav {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 50px;
     padding-top: 40px;
 
     position: relative;
@@ -83,6 +93,15 @@ nav a:hover::before {
     width: 100%;
 }
 
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    float: left;
+    color:  #49351d;
+}
+
+/* notices/alerts */
+
 .notice {
     background: #679dca;
     padding: 10px;
@@ -102,10 +121,18 @@ nav a:hover::before {
     margin-bottom: 10px;
 }
 
-.container {
+/* main content */
+
+main {
      width: 90%;
      margin: 0 auto;
      min-height: 100%;
+     margin-top: 10px;
+}
+
+.container {
+    overflow: auto;
+    padding-bottom: 100px;
 }
 
 h1 {
@@ -114,30 +141,18 @@ h1 {
     color:  #49351d;
     margin: 15px 0px;
 }
-.logo {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 100px;
-    float: left;
-    color:  #49351d;
-}
 
-.sign-up-img {
-    width: 45%;
-    float: left;
-    filter: ; 
-}
+/* forms */
 
 form {
     float: right;
     width: 50%;
+    margin-bottom: 40px;
 }
 
 .form-group {
     display: grid;
     margin-bottom: 15px;
-}
-
-.form-label {
 }
 
 .form-field {
@@ -147,7 +162,9 @@ form {
     background: #ffcc99;
     font-family: 'Roboto', sans-serif;
     outline: none;
+    width: 100%;
 }
+
 .text-field {
     height: 100px;
     border-bottom: 3px solid #49351d;
@@ -156,5 +173,41 @@ form {
     outline: none;
 }
 
+::placeholder {
+    color: #7e7e1b;
+    opacity: 1;
+}
 .button {
+
+}
+
+/* sign up page */
+
+.sign-up-img {
+    width: 45%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+/* footer */
+
+footer {
+    background-color: #7e7e1b;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+.footer-list {
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item {
+    margin: 40px;
+    color: #49351d;
 }
