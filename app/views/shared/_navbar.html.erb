@@ -1,6 +1,6 @@
 <header>
   <div class="inner-header">
-    <%= link_to "ash's smokin' tong!", root_path, class: "logo" %>
+    <%= link_to "ash's smokin' tong", root_path, class: "logo" %>
     <nav>
         <ul>
           <li>
@@ -9,17 +9,20 @@
           <li>
             <%= link_to "example 2", root_path %>
           </li>
-          <li>
-            <%= link_to "example 3", root_path %>
-          </li>
           <% unless Current.user %>
             <li>
-                <%= link_to "Sign up", sign_up_path %>
+              <%= link_to "Sign in", sign_in_path %>
+            </li>
+            <li>
+              <%= link_to "Sign up", sign_up_path %>
             </li>
           <% end %>
           <% if Current.user %>
             <li>
-                <%= link_to "Logout", logout_path, method: :delete %>
+              <%= link_to "Account", account_path %>
+            </li>
+            <li>
+              <%= link_to "Logout", logout_path, method: :delete %>
             </li>
           <% end %>
         </ul>

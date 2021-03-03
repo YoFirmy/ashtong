@@ -9,8 +9,10 @@
       <li class="footer-item">
         <%= link_to "facebook", "https://www.facebook.com/groups/456133042487589", target: "_blank" %>
       </li>
-      <li class="footer-item">
-        <%= link_to "Sign up", sign_up_path %>
-      </li>
+      <% unless Current.user %>
+        <li class="footer-item">
+          <%= link_to "Sign up", sign_up_path %>
+        </li>
+      <% end %>
     </ul>
 </footer>

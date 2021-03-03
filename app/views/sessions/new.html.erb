@@ -1,0 +1,16 @@
+<h1>sign in</h1>
+
+<%= image_tag "packaged_ashtong", class: "sign-up-img" %>
+<%= form_with url: sign_in_path do |form| %>
+  <div class="form-group">
+    <%= form.label :email, class: "form-label" %>
+    <%= form.text_field :email, placeholder: "So we can contact you.", class: "form-field" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :password, class: "form-label" %>
+    <%= form.password_field :password, placeholder: "Must be 5 characters or more.", class: "form-field" %>
+  </div>
+  <div>
+    <%= form.submit "Sign in", class: "button" %>
+  </div>
+<% end %>

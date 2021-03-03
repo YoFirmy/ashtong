@@ -1,0 +1,19 @@
+<h1>Account</h1>
+
+<h3>Hi <%= Current.user.name.capitalize %>, here is your account information:</h3>
+<div class="account-info">
+<h5>Email: <%= Current.user.email %></h5>
+<h5>Address: 
+<% if Current.user.address.present? %>
+  <%= Current.user.address %>
+<% else %>
+  <%= "No address has been submitted yet." %>
+<% end %>
+</h5>
+<h5>Phone Number: 
+<% if Current.user.phone_number.present? %>
+  <%= Current.user.phone_number %>
+<% else %>
+  <%= "No phone number submitted, we will contact you by email if we need to." %>
+<% end %></h5>
+</div>
