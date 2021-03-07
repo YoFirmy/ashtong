@@ -1,11 +1,21 @@
 class User < ApplicationRecord
-    has_secure_password
+  has_secure_password
 
-    validates :name, presence: true
-    validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
-    validates :password, presence: true, format: { with: /\A\S{5,}\z/ }
+  validates :name, presence: true
+  validates :email, presence: true, format: { with: /\A[^@\s]+@[^@\s]+\z/ }
+  validates :password, length: { minimum: 5 }, if: :password_required?
 
-    after_initialize do
-        self.admin ||= false
-    end
+  def enforce_password_validation
+    @enforce_password_validation = true
+  end
+  
+  after_initialize do
+    self.admin ||= false
+  end
+
+  private
+
+  def password_required?
+    @enforce_password_validation || password.present?
+  end
 end

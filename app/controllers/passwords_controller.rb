@@ -5,7 +5,10 @@ class PasswordsController < ApplicationController
     end
 
     def update
-      if Current.user.update(password_params)
+      user = Current.user
+      user.enforce_password_validation
+
+      if user.update(password_params)
         redirect_to root_path, notice: "Password updated."
       else
         render :edit
