@@ -1,1 +1,11 @@
 <h1>Tongs</h1>
+
+<% @products.each do |tong| %>
+  <div class="tong-group">
+    <%= image_tag tong.image, class: "tong-image" %>
+    <div class="tong-info">
+      <p><%= tong.name %></p>
+      <p>Quantity available: <%= tong.quantity %></p>
+    </div>
+  </div>
+<% end %>

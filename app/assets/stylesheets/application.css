@@ -228,6 +228,26 @@ textarea:-webkit-autofill {
     margin: 20px 0px;
 }
 
+/* Tongs page */
+
+.tong-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tong-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.tong-info p {
+    font-size: 20px;
+    margin: 5px;
+}
+
 /* footer */
 
 footer {
