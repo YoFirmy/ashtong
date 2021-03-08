@@ -8,10 +8,6 @@ class User < ApplicationRecord
   def enforce_password_validation
     @enforce_password_validation = true
   end
-  
-  after_initialize do
-    self.admin ||= false
-  end
 
   private
 
