@@ -1,11 +1,14 @@
 <h1>Tongs</h1>
 
-<% @products.each do |tong| %>
+<% @products.each do |product| %>
   <div class="tong-group">
-    <%= image_tag tong.image, class: "tong-image" %>
+    <%= image_tag product.image, class: "tong-image" %>
     <div class="tong-info">
-      <p><%= tong.name %></p>
-      <p>Quantity available: <%= tong.quantity %></p>
+      <p><%= product.name %></p>
+      <p>Quantity available: <%= product.quantity %></p>
+    </div>
+    <div style="margin-left: 30px;">
+      <%= link_to "Order", order_tong_path(product), class: "button" %>
     </div>
   </div>
 <% end %>

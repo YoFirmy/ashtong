@@ -1,0 +1,9 @@
+<h1> Order <%= @product.name %></h1>
+
+<div class="tong-group">
+  <%= image_tag @product.image, class: "tong-image" %>
+  <div class="tong-info">
+    <p><%= @product.name %></p>
+    <p>Quantity available: <%= @product.quantity %></p>
+  </div>
+</div>

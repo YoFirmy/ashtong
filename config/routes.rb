@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   delete "logout", to: "sessions#destroy"
   
   get "tongs", to: "products#index"
+  get "order_tong", to: "products#show"
 
   root to: "main#index"
 end
