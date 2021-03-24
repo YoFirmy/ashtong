@@ -6,7 +6,7 @@
     <div class="tong-info">
       <p><%= product.name %></p>
       <p>Quantity available: <%= product.quantity %></p>
-      <p> Price per 100gm: <%= number_to_currency(product.price, { unit: "£" }) %></p>
+      <p> Price per <%= product.batch_amount %>: <%= number_to_currency(product.price, { unit: "£" }) %></p>
     </div>
     <div style="margin-left: 30px;">
       <%= link_to "Order", order_tong_path(product), class: "button" %>
