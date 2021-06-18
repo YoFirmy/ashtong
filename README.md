@@ -1,24 +1,44 @@
-# README
+# Ashtong
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a webapp I am still in the middle of creating. It is intended to organise orders and subscriptions making it easy for both customers of Ashtong and the creators of Ashtong.
 
-Things you may want to cover:
+##### Prerequisites
 
-* Ruby version
+The setups steps expect following tools installed on the system.
 
-* System dependencies
+- Github
+- Ruby [2.4.0](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
+- Rails [5.0.2](https://github.com/organization/project-name/blob/master/Gemfile#L12)
 
-* Configuration
+##### 1. Check out the repository
 
-* Database creation
+```bash
+git clone git@github.com:organization/project-name.git
+```
 
-* Database initialization
+##### 2. Create database.yml file
 
-* How to run the test suite
+Copy the sample database.yml file and edit the database configuration as required.
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+cp config/database.yml.sample config/database.yml
+```
 
-* Deployment instructions
+##### 3. Create and setup the database
 
-* ...
+Run the following commands to create and setup the database.
+
+```ruby
+bundle exec rake db:create
+bundle exec rake db:setup
+```
+
+##### 4. Start the Rails server
+
+You can start the rails server using the command given below.
+
+```ruby
+bundle exec rails s
+```
+
+And now you can visit the site with the URL http://localhost:3000
