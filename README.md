@@ -7,8 +7,8 @@ This is a webapp I am still in the middle of creating. It is intended to organis
 The setups steps expect following tools installed on the system.
 
 - Github
-- Ruby [2.4.0](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
-- Rails [5.0.2](https://github.com/organization/project-name/blob/master/Gemfile#L12)
+- Ruby [3.0.0](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
+- Rails [6.1.3](https://github.com/organization/project-name/blob/master/Gemfile#L12)
 
 ##### 1. Check out the repository
 
